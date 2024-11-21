@@ -1,66 +1,56 @@
-# Build A Digital Resume Using Python & Streamlit
-Create a digital resume in minutes with Python and Streamlit. In this tutorial, I'll show you what it takes to build a digital resume using Python and Streamlit.<br>
+# Digital Resume Portfolio
 
-Feel free to use this template and adjust it to your needs & linking.<br>
+This is a digital resume portfolio built using Streamlit. Streamlit is an open-source app framework in Python that helps you create and share custom web apps for machine learning and data science.
 
-💡 **The website design is inspired by [@divanov11](https://github.com/divanov11)** 💡 <br>
-Find his:
-- repository here: https://github.com/divanov11/Digital-Resume
-- YouTube video here: https://youtu.be/clwpf3VwCZQ
+## Features
 
-## Live Demo
-👉 **https://resume.pythonandvba.com/**
+- **Interactive UI**: A clean and interactive user interface to showcase your resume.
+- **Customizable**: Easily customizable to fit your personal information and style.
+- **Responsive Design**: Works well on different devices and screen sizes.
+- **Easy to Deploy**: Can be deployed on various platforms like Heroku, AWS, or Streamlit Sharing.
 
-## Screenshots
-![Demo1](./assets/demo1.png?raw=true "Demo1")
-![Demo2](./assets/demo2.png?raw=true "Demo2")
-![Demo3](./assets/demo3.png?raw=true "Demo3")
+## Installation
 
-## Video Tutorial
-[![YouTube Video](https://img.youtube.com/vi/BXAeMICmUSQ/0.jpg)](https://youtu.be/BXAeMICmUSQ)
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/digital-resume-portfolio.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd digital-resume-portfolio
+    ```
+3. Install the required dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+## Usage
 
-## Requirements
-Install the dependencies with pip
-```
-Pillow==9.2.0
-streamlit==1.12.0
-```
+1. Run the Streamlit app:
+    ```bash
+    streamlit run app.py
+    ```
+2. Open your web browser and go to `http://localhost:8501` to view your digital resume.
 
-## Run the app
-Terminal
-```
-# vanilla terminal
-streamlit run app.py
-```
+## Customization
 
+1. Open the `app.py` file in a text editor.
+2. Update the personal information, skills, experience, education, and other sections with your own data.
+3. Save the changes and rerun the Streamlit app to see the updates.
 
+## Deployment
 
-## 🤓 Check Out My Excel Add-ins
-I've developed some handy Excel add-ins that you might find useful:
+To deploy your digital resume portfolio, you can use platforms like Heroku, AWS, or Streamlit Sharing. Follow the respective platform's documentation for deployment instructions.
 
-- 📊 **[Dashboard Add-in](https://pythonandvba.com/grafly)**: Easily create interactive and visually appealing dashboards.
-- 🎨 **[Cartoon Charts Add-In](https://pythonandvba.com/cuteplots)**: Create engaging and fun cartoon-style charts.
-- 🤪 **[Emoji Add-in](https://pythonandvba.com/emojify)**: Add a touch of fun to your spreadsheets with emojis.
-- 🛠️ **[MyToolBelt Add-in](https://pythonandvba.com/mytoolbelt)**: A versatile toolbelt for Excel, featuring:
-  - Creation of Pandas DataFrames and Jupyter Notebooks from Excel ranges
-  - ChatGPT integration for advanced data analysis
-  - And much more!
+## Contributing
 
+Contributions are welcome! If you have any suggestions or improvements, please create a pull request or open an issue.
 
+## License
 
-## 🤝 Connect with Me
-- 📺 **YouTube:** [CodingIsFun](https://youtube.com/c/CodingIsFun)
-- 🌐 **Website:** [PythonAndVBA](https://pythonandvba.com)
-- 💬 **Discord:** [Join our Community](https://pythonandvba.com/discord)
-- 💼 **LinkedIn:** [Connect with me](https://www.linkedin.com/in/sven-bosau/)
-- 📸 **Instagram:** [Follow me](https://www.instagram.com/codingisfun_official/)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-## Support My Work
-Love my content and want to show appreciation? Why not [buy me a coffee](https://pythonandvba.com/coffee-donation) to fuel my creative engine? Your support means the world to me! 😊
+## Acknowledgements
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://pythonandvba.com/coffee-donation)
-
-## Feedback
-Got some thoughts or suggestions? Don't hesitate to reach out to me at contact@pythonandvba.com. I'd love to hear from you! 💡
-![Logo](https://www.pythonandvba.com/banner-img)
+- [Streamlit](https://www.streamlit.io/) for providing the framework.
+- Any other libraries or resources used in this project.
