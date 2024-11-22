@@ -8,15 +8,6 @@ from datetime import datetime
 from my_helper import ensure_headers
 
 
-# Define the scope and authorize the service account
-SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-CREDS = Credentials.from_service_account_info(st.secrets['gcp_service_account'], scopes=SCOPES)
-gc = gspread.authorize(CREDS)
-
-
-# Open the Google Sheet
-SHEET_NAME = "Resume Feedback"
-
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
@@ -165,8 +156,22 @@ for project, link in PROJECTS.items():
 
 
 # --- Feedback ---
+# Define the scope and authorize the service account
+SCOPES = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
+CREDS = Credentials.from_service_account_info(st.secrets['gcp_service_account'], scopes=SCOPES)
+gc = gspread.authorize(CREDS)
+
+
+# Open the Google Sheet
+SHEET_NAME = "Resume Feedback"
+
+# Open spreadsheet
+try:
+    sheet = gc.open(SHEET_NAME).sheet1
+except Exception as e:
+    print(f'Error: {e}')
+
 # Ensure the sheet has headers
-sheet = gc.open(SHEET_NAME).sheet1 
 headers = ["Timestamp", "Name", "Email", "Message"]
 if not ensure_headers(sheet, headers):
     raise ValueError("Sheet headers don't match expected format")
